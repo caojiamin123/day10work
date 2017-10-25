@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title>work33在线运行代码</title>
+	</head>
+	<body>
+		<textarea id="text" rows="20" cols="100"></textarea>
+		<br />
+		<input type="button" id="btn" value="运行代码" />
+	</body>
+	<script type="text/javascript">
+		window.onload = function(){
+			var oTxt = document.getElementById('text');
+			var oBtn = document.getElementById('btn');
+			
+			oBtn.onclick = function(){
+				var win = window.open('about:blank');
+				win.document.write(oTxt.value);	
+				setTimeout(function(){
+					win.onload();	
+				},100);
+			}
+		}
+	</script>
+</html>

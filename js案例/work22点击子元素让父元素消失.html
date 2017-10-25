@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title>work22点击子元素让父元素消失</title>
+	</head>
+	<body>
+		<ul id="box">
+			<li>1111<a href="javascript:;">隐藏</a></li>
+			<li>2222<a href="javascript:;">隐藏</a></li>
+			<li>3333<a href="javascript:;">隐藏</a></li>
+			<li>4444<a href="javascript:;">隐藏</a></li>
+		</ul>
+	</body>
+	<script type="text/javascript">
+		window.onload=function(){
+			var obox=document.getElementById("box");
+			var abtn=obox.getElementsByTagName("a");
+			for (var i=0;i<abtn.length;i++) {
+				abtn[i].onclick=function(){
+					this.parentNode.style.display='none';
+				}
+			}
+		}
+	</script>
+</html>

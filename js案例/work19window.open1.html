@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title>work19window.open1</title>
+	</head>
+	<body>
+		<input type="button" id="btn" value="打开" />
+	</body>
+	<script type="text/javascript">
+		//window.open('url','打开的方式');
+		window.onload=function(){
+			var obtn=document.getElementById("btn");
+			obtn.onclick=function(){
+				window.open('http://www.baidu.com','_blank');   //新页面打开
+			}
+		}	
+	</script>
+</html>

@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title>work3dom关系</title>
+	</head>
+	<body>
+		<ul id="box">
+			<li>
+				<ul>
+					<li></li>
+					<li></li>
+					<li></li>
+					<li></li>
+				</ul>
+			</li>
+			<li></li>
+			<li></li>
+			<li></li>
+		</ul>
+	</body>
+	<script type="text/javascript">
+		window.onload=function(){
+			var obox=document.getElementById("box");
+			//var ali=obox.getElementsByTagName('li');
+			ali=obox.children;
+			alert(ali.length);
+		}
+	</script>
+</html>

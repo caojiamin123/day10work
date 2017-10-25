@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title>work25关于select1</title>
+	</head>
+	<body>
+		<select id="sl">
+			<option value="bj">北京</option>
+			<option value="tj">天津</option>
+			<option value="hb" selected="">河北</option>
+		</select>
+	</body>
+	<script type="text/javascript">
+		window.onload=function(){
+			var os=document.getElementById("sl");
+			alert(os.selectedIndex);       //2
+		}
+	</script>
+</html>
